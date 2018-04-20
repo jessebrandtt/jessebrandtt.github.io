@@ -3,20 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Code Construction</title>
-    <link rel="stylesheet" href="guesser.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Mad Libs</title>
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
-    <script
-            src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-            integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-            crossorigin="anonymous">
-    </script>
+    <link rel="stylesheet" href="libs.css">
+
 </head>
 <body>
+
+<h1>Mad Libs</h1>
 <div class="page-container">
     <div class="page-back">
         <nav>
@@ -30,19 +27,94 @@
         </nav>
     </div>
 </div>
-<div id="guess_display"></div>
-<form id="guess_form">
-    <label id="guess_label">Guess a letter:
-        <input type="text" id="guess_input">
+
+<form id="lib-form">
+    <label>
+        Adjective: <input type="text" id="adjective1">
     </label>
+    <br/>
+    <label>
+        Adjective: <input type="text" id="adjective2">
+    </label>
+    <br/>
+    <label>
+        Celeberty: <input type="text" id="celeb1">
+    </label>
+    <br/>
+    <label>
+        Celeberty: <input type="text" id="celeb2">
+    </label>
+    <br/>
+    <label>
+        Animal: <input type="text" id="animal">
+    </label>
+    <br/>
+    <label>
+        Verb: <input type="text" id="verb">
+    </label>
+    <br/>
+    <label>
+        Noun: <input type="text" id="noun1">
+    </label>
+    <br/>
+    <label>
+        Noun: <input type="text" id="noun2">
+    </label>
+    <br/>
+    <label>
+        Part of Body: <input type="text" id="partofbody1">
+    </label>
+    <br/>
+    <label>
+        Adverb: <input type="text" id="adverb1">
+    </label>
+    <br/>
+    <label>
+        Adjective: <input type="text" id="adjective3">
+    </label>
+    <br/>
+    <label>
+        Adverb: <input type="text" id="adverb2">
+    </label>
+    <br/>
+    <label>
+        Adjective: <input type="text" id="adjective4">
+    </label>
+    <br/>
+    <label>
+        Adjective: <input type="text" id="adjective5">
+    </label>
+    <br/>
+    <label>
+        Part of Body: <input type="text" id="partofbody2">
+    </label>
+    <br/>
+    <label>
+        Adjective: <input type="text" id="adjective6">
+    </label>
+    <br/>
+    <label>
+        Noun: <input type="text" id="noun3">
+    </label>
+    <br/>
+    <label>
+        Noun: <input type="text" id="noun4">
+    </label>
+    <br/>
+    <label>
+        Person in Room(male): <input type="text" id="personinroom">
+    </label>
+    <br/>
+    <button type="submit">Generate!</button>
 </form>
 
-<div id="guess_status"></div>
-<div id="letter_counter"></div>
-<label id ="counter_label">
-    Guessed Letters:
-    <div id="guessedLettersDisplay"></div>
-</label>
-<script src="guesser.js"></script>
+
+<div id="story"></div>
+
+<div id="demo"></div>
+
+<script src="libs.js"></script>
+
+
 </body>
 </html>
