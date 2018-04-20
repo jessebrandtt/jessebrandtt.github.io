@@ -10,6 +10,10 @@ body {
     overflow-x: hidden;
 }
 
+#lib-form {
+    top: 15vh;
+}
+
 nav {
     position: fixed;
     top: 0;
