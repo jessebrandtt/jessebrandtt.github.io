@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="quiz.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Code Construction</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+</head>
+<body>
+
+<h3>Quiz</h3>
+<div class="page-container">
+    <div class="page-back">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="hover">Home</a></li>
+                <li><a href="wordGuesser.html" class="hover">Word Guesser</a></li>
+                <li><a href="madLibs.html" class="hover">Mad Lib</a></li>
+                <li><a href="quiz.html" class="hover">Quiz</a></li>
+                <li><a href="about.html" class="hover">About</a></li>
+                <li><a href="contact.html" class="hover">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<form id="quiz-form">
+
+    <fieldset>
+        <legend>What language is this programmed in?</legend>
+        <label><input name="question1" value="javascript" type="radio">JavaScript</label><br>
+        <label><input name="question1" value="python" type="radio">Python</label><br>
+        <label><input name="question1" value="java" type="radio">Java</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Who am I??</legend>
+        <label><input name="question2" value="jude" type="radio">Jude</label><br>
+        <label><input name="question2" value="jake" type="radio">Jake</label><br>
+        <label><input name="question2" value="jesse" type="radio">Jesse</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Select Dog</legend>
+        <label><input name="question3" value="fish" type="radio"></label>Fish<br>
+        <label><input name="question3" value="dog" type="radio">Dog</label><br>
+        <label><input name="question3" value="cat" type="radio">Cat</label><br>
+    </fieldset>
+
+    <button type="submit">Check me</button>
+</form>
+
+<div id="results"></div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
